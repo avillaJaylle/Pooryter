@@ -16,7 +16,11 @@ function postar(){
     title.innerText = new Date(); // new Date() retorna a data e hora atual
     // Atribui o conteúdo da textarea#msg para a tag <p> que criamos
     text.innerText = msg.value;
+    
+    msg.focus();
     msg.value = ""; // Apaga o conteúdo do textarea#msg
+    contagem.innerText = "0"; // Zera a contagem de caracteres
+
 
     // Aninha os elementos <h3> e <p> à tag <article>
     post.appendChild(title);
